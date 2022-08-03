@@ -1,6 +1,13 @@
-import { defineNuxtConfig } from 'nuxt'
+// import { defineNuxtConfig } from 'nuxt'
 
-// https://v3.nuxtjs.org/api/configuration/nuxt.config
-export default defineNuxtConfig({
-    buildModules: ['@pinia/nuxt'],
-})
+// // https://v3.nuxtjs.org/api/configuration/nuxt.config
+// export default defineNuxtConfig({
+//     buildModules: ['@pinia/nuxt'],
+// })
+
+export default {
+    // ... other options
+    buildModules: [
+      '@pinia/nuxt',
+    ],
+  }

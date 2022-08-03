@@ -6,8 +6,10 @@
 </template>
 
 <script>
+import useStore from '~~/store';
 export default defineComponent({
   setup() {
+    const store = useStore();
 
   },
 })
