@@ -12,6 +12,8 @@
   "dependencies": {
     "@nuxtjs/composition-api": "^0.33.1",
     "@pinia/nuxt": "^0.3.1",
-    "pinia": "^2.0.17"
+    "chart.js": "^3.9.1",
+    "pinia": "^2.0.17",
+    "vue-chartjs": "^4.1.1"
   }
 }

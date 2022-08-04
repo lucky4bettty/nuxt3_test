@@ -1,7 +1,10 @@
 <template>
   <div>
+    
     <h1>Index Page</h1>
-    <NuxtLink to="/detail">Detail Page</NuxtLink>
+    <div><NuxtLink to="/detail">Detail Page</NuxtLink></div>
+    <div><NuxtLink to="/chart">chart</NuxtLink></div>
+    
   </div>
 </template>
 
