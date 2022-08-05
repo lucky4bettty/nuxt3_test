@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class = "pie_part">
-        <PieChart />
+        <PieChart :labels = "labels"/>
     </div>
     <div class = "bar_part">
         <BarChart />
@@ -23,10 +23,46 @@ export default {
   name: 'AllCharts',
   components: { 
     PieChart,
-    BarChart
+    BarChart,
   },
   data() {
-    return{}
+    var mockPayload = {
+        "bedTime": "22:10",
+        "missing": "false",
+        "quality": "Excellent",
+        "startTime": "20:00",
+        "timeline": [
+            {
+            "state": "Asleep",
+            "duration": "01:20"
+            },
+            {
+            "state": "Disrupted",
+            "duration": "00:10"
+            },
+            {
+            "state": "Asleep",
+            "duration": "06:30"
+            },
+            {
+            "state": "Disrupted",
+            "duration": "00:10"
+            },
+            {
+            "state": "Asleep",
+            "duration": "00:50"
+            }
+        ],
+        "totalTimeAsleep": "08:40",
+        "totalTimeAwake": "00:20",
+        "wakeupTime": "07:10"
+        };
+    var labels = ['豬','雞','魚','牛']
+
+    return {
+      mockPayload,
+      labels
+    };
   }
 }
 </script>
@@ -40,5 +76,8 @@ export default {
 
 </style>
 
+<!-- 參考畫面 -->
+<!-- https://kuanfuchen.github.io/vuedatagraph/ -->
+<!-- https://the-f2e-week4.chill404.cc/ -->
 <!-- 圖表 參考以下 （vue-chartjs） -->
 <!-- https://vue-chartjs.org/examples/#vue-3-charts -->
